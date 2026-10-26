@@ -6,6 +6,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
+//https://github.com/youssefna134-collab/ColorChooser
+
 public class ColorChooserController {
 
     @FXML
@@ -64,6 +66,6 @@ public class ColorChooserController {
             .asString("%.0f"));
         
         alphaTextField.textProperty().bind(alphaSlider.valueProperty()
-            .asString("%.0f"));
+            .asString("%.2f"));
     }
 }
